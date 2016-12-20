@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.7.4",
     "jquery": "^2.2.3",
     "normalize.css": "^4.1.1"
   },
