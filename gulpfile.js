@@ -89,12 +89,13 @@ gulp.task('build:scripts:serve', ['build:scripts'], function(cb) {
 	plugins.browsersync.reload();
 	cb();
 });
+
 /**
  * Wrapper Build:Jekyll:Serve Task
  * 1. Build Jekyll Files
  * 2. Reload Browser
  */
-gulp.task('build:jekyll:serve', ['build:jekyll'], function(cb) {
+gulp.task('build:jekyll:serve', ['build:dev'], function(cb) {
 	plugins.browsersync.reload();
 	cb();
 });
