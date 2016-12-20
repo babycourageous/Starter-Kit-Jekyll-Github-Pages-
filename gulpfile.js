@@ -50,6 +50,11 @@ gulp.task('clean:jekyll', getTask('clean:jekyll'));
 gulp.task('clean', ['clean:styles', 'clean:images', 'clean:svg', 'clean:scripts', 'clean:jekyll']);
 
 /**
+ * Batch Assets Build Task
+ */
+gulp.task('build:assets', ['build:images', 'build:scripts', 'build:styles', 'build:svg']);
+
+/**
  * Batch Build Task
  * 1. clean out files
  * 2. build assets in parallel
