@@ -103,7 +103,7 @@ gulp.task('build:jekyll:serve', ['build:dev'], function(cb) {
 /**
  * Batch Serve Task
  */
-gulp.task('serve', ['build'], function() {
+gulp.task('serve', ['build:dev'], function() {
 	// INIT browsersync
 	getTask('browsersync')(gulp, plugins, config);
 	// WATCH config.yml --> build:jekyll:serve
@@ -118,9 +118,11 @@ gulp.task('serve', ['build'], function() {
 	gulp.watch('app/_assets/svg/**/*.svg', ['build:svg']);
 	// WATCH _posts --> build:jekyll:serve
 	gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:serve']);
+  // WATCH collections --> build:jekyll:serve
+  // add collections folders here
 	// WATCH html --> build:jekyll:serve
 	// -- **/*.html, !_site/**/*/*.*
-	gulp.watch(['**/*.html', '!dist/**/*.*'], ['build:jekyll:serve']);
+	gulp.watch(['**/*.html', '!_site/**/*.*'], ['build:jekyll:serve']);
 	// WATCH rss feed --> build:jekyll:serve
 	gulp.watch('feed.xml', ['build:jekyll:serve']);
 	// WATCH _data --> build:jekyll:serve
@@ -132,4 +134,4 @@ gulp.task('serve', ['build'], function() {
 
 gulp.task('default', function() {
 	console.log('gulp default task');
-})
+});
