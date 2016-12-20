@@ -62,10 +62,24 @@ gulp.task('build:assets', ['build:images', 'build:scripts', 'build:styles', 'bui
  */
 gulp.task('build', function(cb) {
 	plugins.runsequence('clean',
-	    ['build:images', 'build:scripts', 'build:styles', 'build:svg'],
+	    'build:assets',
       'build:jekyll',
       cb);
 });
+
+/**
+ * Batch Build Task for Local Development Environment
+ * 1. clean out files
+ * 2. build assets in parallel
+ * 3. build jekyll (with development config)
+ */
+gulp.task('build:dev', function(cb) {
+	plugins.runsequence('clean',
+	    'build:assets',
+      'build:jekyll:dev',
+      cb);
+});
+
 /**
  * Wrapper Build:Scripts:Serve Task
  * 1. Build Script Files
