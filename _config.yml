@@ -10,3 +10,9 @@ logo:
 
 exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md"]
 keep_files: ["assets"]
+
+# collections
+
+# defaults
+
+# gems
