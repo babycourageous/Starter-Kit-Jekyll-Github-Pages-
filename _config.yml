@@ -8,7 +8,7 @@ logo:
   #links:
     #- Uncomment and put social links here
 
-exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md"]
+exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md", "Gemfile"]
 keep_files: ["assets"]
 
 # collections
