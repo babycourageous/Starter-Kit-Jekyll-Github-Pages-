@@ -1,28 +1,91 @@
-/*
- * 2- PLUGINS
+/* ==========================================================================
+   MAIN IMPORT
+   ========================================================================== */
+
+/**
+ * starterkit for github pages, by @babycourageous
+ *
+ * github.com/babycourageous
  */
-@import 'normalize';
+
+/**
+ * This is the main manifest file. Make any additions, extensions, and
+ * modifications here.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Project-wide variables and settings.
+ * Colors...............Project-wide colors.
+ * Typography...........Project-wide fonts.
+ * Transitions..........Project-wide transition settings.
+ * Breakpoints..........Project-wide breakpoint map.
+
+ *
+ * TOOLS
+ * Bourbon..............Mixin library.
+ * Breakpoint...........Breakpoint manager plugin.
+ * Modular Scale........Modular Scale calculator plugin.
+ * Typi.................Responsive Typography and Vertical Rhythm plugin.
+ * Hidden...............Mixin for hiding elements.
+ * Mixins...............Project-specific mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Typography...........Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6 and p.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ * Forms................Simple form styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ *
+ * COMPONENTS
+ *
+ *
+ * UTILITIES
+ */
+
+// #SETTINGS
+@import "settings.global";
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.transitions";
+@import "settings.breakpoints";
+
+// #TOOLS
+@import "tools.mixins";
 @import 'bourbon';
 
-/*
- * 1- UTILS
- */
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'utils/functions';
+// #GENERIC (and plugins)
+@import 'normalize';
+@import "generic.reset";
+@import "generic.box-sizing";
+@import 'breakpoint';
+@import 'modular-scale';
+@import "typi";
 
- /*
- * 3- BASE
- */
+// #ELEMENTS
+@import "elements.page";
+@import "elements.typography";
+@import "elements.images";
 
-/*
- * 4- LAYOUT
- */
+// #OBJECTS
+@import "objects.wrapper";
 
-/*
- * 5- MODULES
- */
+// #COMPONENTS
 
- /*
- * 6- PAGES
- */
+// #UTILITIES
