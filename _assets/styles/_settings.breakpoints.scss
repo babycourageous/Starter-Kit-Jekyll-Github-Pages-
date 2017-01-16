@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #BREAKPOINTS
+   ========================================================================== */
+
+/**
+ * Breakpoint map.
+ *
+ * Define all breakpoints for the project here.
+ * These will be used for :
+ *   - media queries (Breakpoint)
+ *   - responsive typography (Typi)
+ *
+ */
+$breakpoints: (
+  small: 600px,
+  medium: 725px,
+  large: 910px,
+  xl: 1125px
+);
