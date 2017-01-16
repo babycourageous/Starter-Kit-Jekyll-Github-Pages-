@@ -1,0 +1,59 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+/**
+ *
+ *
+ */
+
+ // Configure these form-specific settings.
+ $form__font-family: $font__family--sans;
+
+ $legend__padding: vr(.25) vr(1);
+ $legend__font-size: 1rem;
+ $legend-color: $color__gray--light;
+ $legend-color--bg: $color__primary--alt;
+
+ $fieldset__padding: 1.5rem;
+ $fieldset__font-size: 1rem;
+ $fieldset__color--border: $color__primary--alt;
+
+ $label__padding: 0.25rem 0;
+ $label__font-size: ms(-1);
+ $label__color:  $color__primary;
+
+ /* ========================================================================= */
+
+ form {
+   font-family: $form__font-family;
+ }
+
+
+ fieldset {
+   padding: $fieldset__padding;
+
+   font-size: $fieldset__font-size;
+
+   border: 2px solid $fieldset__color--border;
+   border-radius: 0.5em;
+ }
+
+ legend {
+   padding: $legend__padding;
+
+   color: $legend__color;
+
+   background: $legend__color--bg;
+   border-radius: 1rem;
+ }
+
+ label {
+   padding: $label__padding;
+
+   font-weight: bold;
+   font-size: $label__font-size;
+   color: $label__color;
+
+   cursor: pointer;
+ }
