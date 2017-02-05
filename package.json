@@ -1,7 +1,7 @@
 {
   "name": "gh-pages-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "A starter kit for websites using Github Pages.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
