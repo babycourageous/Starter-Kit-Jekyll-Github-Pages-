@@ -1,6 +1,11 @@
 # starter-kit
 A simple Jekyll startup kit for web projects hosted on Github Pages.
 
+The starter kit makes use of Gulp as a build tool by using npm scripts rather than relying on a global install of Gulp. The following npm scripts are exposed to start:
+
+- npm run serve
+- npm run build
+
 The starter kit includes the following :
 - ITCSS for CSS structure [http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731](http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731)
 - Gulp for build
