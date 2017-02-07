@@ -4,6 +4,7 @@
   "description": "A starter kit for websites using Github Pages.",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "serve": "gulp serve"
   },
   "author": "",
