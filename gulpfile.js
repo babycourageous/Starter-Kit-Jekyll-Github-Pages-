@@ -1,10 +1,15 @@
 /* GULP PLUGINS
 ********** */
-var gulp    = require('gulp');
-var plugins = require('gulp-load-plugins')();
+const gulp    = require('gulp');
+// load all plugins in 'devDependencies' into the variable plugins
+const plugins = require('gulp-load-plugins')({
+  pattern: ['*'],
+  scope: ['devDependencies']
+});
+//var plugins = require('gulp-load-plugins')();
 
 /* UTILITIES
-********** */
+**********
 plugins.autoprefixer = require('autoprefixer');
 plugins.browserify   = require('browserify');
 plugins.buffer       = require('vinyl-buffer');
@@ -15,10 +20,10 @@ plugins.lost         = require('lost');
 plugins.pngquant     = require('imagemin-pngquant');
 plugins.runsequence  = require('run-sequence');
 plugins.cp           = require('child_process');
-
+*/
 /* CONFIGURATION
 ********** */
-var config           = require('./gulp/config.js');
+const config = require('./gulp/config.js');
 
 function getTask(task) {
    return require('./gulp/tasks/' + task)(gulp, plugins, config);
